@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Router from "./Route/Router";
+import styled from "@emotion/styled";
+import { ThemeProvider } from "@mui/material";
+import { theme } from "./Styles/theme";
+
+const StyledContainer = styled("div")({
+  width: "100vw",
+  height: "100vh",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+});
+
+const StyledPages = styled("div")({
+  display: "flex",
+  justifyContent: "center",
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <ThemeProvider theme={{ ...theme }}>
+    <StyledContainer>
+      <Header />
+      <StyledPages>
+        <Router />
+      </StyledPages>
+      <Footer />
+    </StyledContainer>
+    // </ThemeProvider>
   );
 }
 
