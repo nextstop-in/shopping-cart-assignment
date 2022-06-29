@@ -1,0 +1,47 @@
+.cardContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+}
+.cardContainer.alter {
+  flex-direction: row-reverse;
+}
+.cardContainer .leftCardContainer img {
+  max-width: 300px;
+}
+.cardContainer .rightCardContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: none;
+}
+.cardContainer .rightCardContainer button {
+  padding: 8px 10px;
+  border: 0;
+  background: #d10157;
+  color: #fff;
+  cursor: pointer;
+  width: max-content;
+}
+.cardContainer .rightCardContainer button:focus {
+  outline: 0;
+}
+.cardContainer .rightCardContainer .title {
+  font-size: 2rem;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 576px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardContainer.alter {
+    flex-direction: column;
+  }
+}

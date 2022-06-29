@@ -1,0 +1,47 @@
+.loginContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.loginContainer .titleContainer {
+  text-align: left;
+  padding-top: 30px;
+}
+.loginContainer .inputContainer button {
+  width: 100%;
+  padding: 8px 10px;
+  border: 0;
+  background: #d10157;
+  margin: 20px 0px;
+  color: #fff;
+  cursor: pointer;
+}
+.loginContainer .inputContainer button:focus {
+  outline: 0;
+}
+.loginContainer .error {
+  color: #c00;
+}
+
+@media screen and (max-width: 576px) {
+  .loginContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .loginContainer .titleContainer {
+    text-align: left;
+    padding-top: 30px;
+    margin-left: 25px;
+  }
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.subtitle {
+  font-size: 18px;
+}

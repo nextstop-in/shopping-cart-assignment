@@ -1,0 +1,46 @@
+.signUpContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.signUpContainer .titleContainer {
+  text-align: left;
+  padding-top: 30px;
+}
+.signUpContainer .inputContainer button {
+  width: 280px;
+  padding: 8px 10px;
+  border: 0;
+  background: #d10157;
+  margin: 20px 0px;
+  color: #fff;
+  cursor: pointer;
+}
+.signUpContainer .inputContainer button:focus {
+  outline: 0;
+}
+.signUpContainer .error {
+  color: #c00;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.subtitle {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 576px) {
+  .signUpContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .signUpContainer .titleContainer {
+    text-align: left;
+    padding-top: 30px;
+    margin-left: 25px;
+  }
+}

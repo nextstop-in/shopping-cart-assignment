@@ -1,0 +1,50 @@
+.miniCardContainer {
+  display: flex;
+  height: 80px;
+  background: #fff;
+  margin: 10px 0px;
+}
+.miniCardContainer .imageContainer {
+  width: 20%;
+}
+.miniCardContainer .imageContainer img {
+  height: 100%;
+}
+.miniCardContainer .detailsContainer {
+  width: 96%;
+  padding-right: 20px;
+}
+.miniCardContainer .detailsContainer .name {
+  width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+.miniCardContainer .detailsContainer .priceContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.miniCardContainer .detailsContainer .priceContainer button {
+  border: 0;
+  background: #d10157;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  width: 25px;
+  font-size: 18px;
+}
+.miniCardContainer .detailsContainer .priceContainer button:focus {
+  outline: 0;
+}
+.miniCardContainer .detailsContainer .priceContainer .count {
+  padding: 10px;
+}
+@media screen and (max-width: 991px) {
+  .miniCardContainer .detailsContainer .priceContainer button {
+    border-radius: 5px;
+  }
+}

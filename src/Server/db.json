@@ -74,14 +74,6 @@
       "id": "5b6899683d1a866534f516e0"
     },
     {
-      "name": "Seafood",
-      "key": "seafood",
-      "description": "Great place to buy fresh seafood.",
-      "enabled": false,
-      "order": -1,
-      "id": "5b68997d3d1a866534f516e1"
-    },
-    {
       "name": "Fruits & Vegetables",
       "key": "fruit-and-veg",
       "description": "A variety of fresh fruits and vegetables.",
@@ -91,7 +83,6 @@
       "id": "5b6899953d1a866534f516e2"
     }
   ],
-
   "products": [
     {
       "name": "Fresho Kiwi - Green, 3 pcs",
@@ -342,6 +333,12 @@
       "category": "5b6899683d1a866534f516e0",
       "sku": "baby-wipes-red-80",
       "id": "5b6c761801a7c3842953089b"
+    }
+  ],
+  "posts": [
+    {
+      "response": "Success",
+      "responseMessage": "Product added to cart successfully"
     }
   ]
 }
